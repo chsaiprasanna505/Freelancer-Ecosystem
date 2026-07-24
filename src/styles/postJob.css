@@ -1,0 +1,325 @@
+.post-job-page {
+
+    min-height:100vh;
+
+    background:#0f172a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+
+
+
+.post-job-card {
+
+    width:100%;
+
+    max-width:750px;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:24px;
+
+
+    border:1px solid rgba(255,255,255,0.08);
+
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,0.35);
+
+
+    position:relative;
+
+}
+
+
+
+
+
+/* Top gradient */
+
+.post-job-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+
+    background:
+    linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6,
+    #06b6d4
+    );
+
+
+    border-radius:24px 24px 0 0;
+
+}
+
+
+
+
+
+/* Back Button */
+
+
+.back-btn {
+
+    width:auto !important;
+
+    padding:10px 18px !important;
+
+    background:#334155 !important;
+
+    margin-bottom:20px;
+
+    font-size:14px !important;
+
+}
+
+
+
+
+
+.back-btn:hover {
+
+    background:#475569 !important;
+
+}
+
+
+
+
+
+.post-job-card h1 {
+
+    color:white;
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+.post-job-card p {
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+.post-job-card form {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+
+
+.post-job-card label {
+
+    color:#e2e8f0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+.post-job-card input,
+.post-job-card textarea {
+
+
+    background:#16233f;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+    font-size:15px;
+
+
+    outline:none;
+
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.post-job-card input:focus,
+.post-job-card textarea:focus {
+
+
+    border-color:#3b82f6;
+
+
+    box-shadow:
+    0 0 0 3px rgba(59,130,246,.2);
+
+}
+
+
+
+
+
+.post-job-card input::placeholder,
+.post-job-card textarea::placeholder {
+
+    color:#94a3b8;
+
+}
+
+
+
+
+
+.submit-job-btn {
+
+
+    margin-top:15px;
+
+
+    background:
+    linear-gradient(
+    90deg,
+    #3b82f6,
+    #2563eb
+    );
+
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:16px;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    font-size:16px;
+
+
+    font-weight:700;
+
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.submit-job-btn:hover {
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+    0 10px 25px rgba(59,130,246,.35);
+
+}
+
+
+
+
+
+.submit-job-btn:disabled {
+
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .post-job-page{
+
+        padding:20px;
+
+    }
+
+
+    .post-job-card{
+
+        padding:25px;
+
+    }
+
+
+    .post-job-card h1{
+
+        font-size:26px;
+
+    }
+
+
+}
