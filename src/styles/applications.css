@@ -1,0 +1,647 @@
+/* ==========================
+   MY APPLICATIONS PAGE
+========================== */
+
+
+.applications-page {
+
+    min-height:100vh;
+
+    background:#0f172a;
+
+    padding:110px 40px 60px;
+
+    color:white;
+
+}
+
+
+
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+.applications-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.applications-header h1 {
+
+    font-size:38px;
+
+    margin:0 0 10px;
+
+}
+
+
+
+.applications-header p {
+
+    color:#94a3b8;
+
+    margin:0;
+
+}
+
+
+
+
+
+
+/* ==========================
+   BROWSE BUTTON
+========================== */
+
+
+.browse-jobs-btn {
+
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+.browse-jobs-btn:hover {
+
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   GRID
+========================== */
+
+
+.applications-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   CARD
+========================== */
+
+
+.application-card {
+
+
+    background:#1e293b;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.application-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:0;
+
+
+    height:4px;
+
+
+    width:100%;
+
+
+    background:
+    linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6
+    );
+
+
+    transform:scaleX(0);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.application-card:hover::before {
+
+
+    transform:scaleX(1);
+
+
+}
+
+
+
+
+.application-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.3);
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   CARD TOP
+========================== */
+
+
+.application-top {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    gap:15px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+.application-top h2 {
+
+
+    margin:0 0 8px;
+
+
+    font-size:21px;
+
+
+}
+
+
+
+.application-top p {
+
+
+    margin:0;
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   STATUS
+========================== */
+
+
+.status {
+
+
+    height:max-content;
+
+
+    padding:7px 14px;
+
+
+    border-radius:20px;
+
+
+    font-size:12px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+.pending {
+
+
+    background:#78350f;
+
+
+    color:#fbbf24;
+
+
+}
+
+
+
+
+
+.accepted {
+
+
+    background:#14532d;
+
+
+    color:#4ade80;
+
+
+}
+
+
+
+
+
+.rejected {
+
+
+    background:#7f1d1d;
+
+
+    color:#f87171;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   INFO
+========================== */
+
+
+.application-info {
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:15px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.application-info div {
+
+
+    background:#16233f;
+
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+}
+
+
+
+.application-info span {
+
+
+    display:block;
+
+
+    color:#94a3b8;
+
+
+    font-size:12px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.application-info strong {
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   VIEW BUTTON
+========================== */
+
+
+.view-application-btn {
+
+
+    width:100%;
+
+
+    padding:13px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.view-application-btn:hover {
+
+
+    background:#1d4ed8;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   EMPTY STATE
+========================== */
+
+
+.empty-applications {
+
+
+    grid-column:1/-1;
+
+
+    text-align:center;
+
+
+    padding:60px;
+
+
+    background:#1e293b;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.empty-applications h2 {
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.empty-applications p {
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+.empty-applications button {
+
+
+    margin-top:20px;
+
+
+    padding:12px 25px;
+
+
+    border:none;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:1000px){
+
+
+    .applications-grid{
+
+
+        grid-template-columns:repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+    .applications-page{
+
+
+        padding:100px 20px 50px;
+
+
+    }
+
+
+
+    .applications-header{
+
+
+        flex-direction:column;
+
+
+        align-items:flex-start;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+    .applications-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+    .application-info{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+}

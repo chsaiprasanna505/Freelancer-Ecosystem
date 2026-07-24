@@ -1,0 +1,222 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  background: #020617;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background: #020617;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 850px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content h2 {
+  margin-top: 20px;
+  font-size: 34px;
+}
+
+.hero-content p {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FEATURED JOBS
+========================= */
+
+.featured-jobs {
+  width: 100%;
+  padding: 40px;
+  background: #020617;
+}
+
+.featured-jobs h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.featured-jobs > p {
+  color: #cbd5e1;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   JOBS GRID
+========================= */
+
+.jobs-grid {
+  width: 100%;
+  display: grid;
+
+  /* 4 cards in one row */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+  width: 100%;
+  min-height: 320px;
+  padding: 30px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* =========================
+   JOB TITLE
+========================= */
+
+.job-card h2 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   COMPANY NAME
+========================= */
+
+.job-card .company {
+  color: #60a5fa;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   JOB DETAILS
+========================= */
+
+.job-details {
+  background: #172033;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.job-details p {
+  color: white;
+  margin: 10px 0;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.job-card button {
+  width: 100%;
+  padding: 15px;
+
+  background: #3478ed;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.job-card button:hover {
+  background: #2563eb;
+}
+
+
+/* =========================
+   HIRING BADGE
+========================= */
+
+.hiring {
+  background: #164e3b;
+  color: #34d399;
+
+  padding: 8px 15px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .jobs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}

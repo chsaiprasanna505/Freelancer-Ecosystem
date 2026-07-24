@@ -1,0 +1,310 @@
+.client-applications-page{
+
+    min-height:100vh;
+
+    background:#0f172a;
+
+    padding:110px 40px;
+
+    color:white;
+
+}
+
+
+
+.client-applications-header{
+
+    margin-bottom:40px;
+
+}
+
+
+
+.client-applications-header h1{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.client-applications-header p{
+
+    color:#94a3b8;
+
+}
+
+
+
+
+
+.applications-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.client-application-card{
+
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+
+}
+
+
+
+.client-application-card:hover{
+
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.3);
+
+
+}
+
+
+
+
+
+.application-job{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.application-job h2{
+
+    font-size:20px;
+
+}
+
+
+
+
+
+.application-status{
+
+
+    background:#334155;
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+
+}
+
+
+
+
+
+.freelancer-info{
+
+    background:#16233f;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.freelancer-info h3{
+
+    margin:0 0 10px;
+
+}
+
+
+
+.freelancer-info p{
+
+    color:#94a3b8;
+
+}
+
+
+
+
+
+.cover-letter{
+
+
+    background:#020617;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.cover-letter h4{
+
+    margin-bottom:8px;
+
+}
+
+
+
+.cover-letter p{
+
+    color:#cbd5e1;
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+.application-actions{
+
+
+    display:flex;
+
+    gap:15px;
+
+
+}
+
+
+
+.application-actions button{
+
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.accept-btn{
+
+    background:#16a34a;
+
+}
+
+
+
+.reject-btn{
+
+    background:#dc2626;
+
+}
+
+
+
+
+.application-actions button:hover{
+
+    opacity:.85;
+
+}
+
+
+
+
+
+.no-applications{
+
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+    background:#1e293b;
+
+    padding:50px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+@media(max-width:1000px){
+
+    .applications-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+    .client-applications-page{
+
+        padding:100px 20px;
+
+    }
+
+
+    .applications-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
